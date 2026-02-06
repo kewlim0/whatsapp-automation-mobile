@@ -1,0 +1,91 @@
+=== Appium State Log ===
+Timestamp: 20260113_181818
+Window Size: {'width': 1080, 'height': 2400}
+Current Activity: .home.ui.HomeActivity
+Current Package: com.whatsapp
+
+=== Visible Elements ===
+
+Elements with text (191):
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/action_bar_root | Class: android.widget.FrameLayout
+  - Text: '' | ID: android:id/content | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/root_view | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.view.View
+  - Text: '' | ID: com.whatsapp:id/main_container | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.LinearLayout
+  - Text: '' | ID: com.whatsapp:id/conversation_list_view_host | Class: android.widget.LinearLayout
+  - Text: '' | ID: android:id/content | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/pager_holder | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/pager | Class: androidx.viewpager.widget.ViewPager
+  - Text: '' | ID: android:id/content | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.view.ViewGroup
+  - Text: '' | ID: com.whatsapp:id/conversation_container | Class: android.widget.LinearLayout
+  - Text: '' | ID: com.whatsapp:id/my_search_bar | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/search_bar_inner_layout | Class: androidx.appcompat.widget.LinearLayoutCompat
+  - Text: '' | ID: com.whatsapp:id/search_icon | Class: android.widget.ImageView
+  - Text: 'Search…' | ID: com.whatsapp:id/search_text | Class: android.widget.TextView
+  - Text: '' | ID: android:id/list | Class: androidx.recyclerview.widget.RecyclerView
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/conversations_swipe_to_reveal_container | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/conversations_swipe_to_reveal_header_combo | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/conversations_swipe_to_reveal_filter_recycler_view | Class: androidx.recyclerview.widget.RecyclerView
+  - Text: '' | ID: null | Class: android.widget.RadioButton
+  - Text: '' | ID: null | Class: android.widget.RadioButton
+  - Text: '' | ID: com.whatsapp:id/conversations_filter_debug_view_id_favorite | Class: android.widget.RadioButton
+  - Text: '' | ID: null | Class: android.widget.RadioButton
+  - Text: '' | ID: null | Class: android.widget.RadioButton
+  - Text: '' | ID: com.whatsapp:id/contact_row_container | Class: android.widget.LinearLayout
+  - Text: '' | ID: com.whatsapp:id/row_addon_start | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/contact_selector | Class: android.widget.FrameLayout
+  - Text: '' | ID: com.whatsapp:id/contact_photo | Class: android.widget.ImageView
+  - Text: '' | ID: com.whatsapp:id/row_content | Class: android.widget.LinearLayout
+  - Text: '' | ID: com.whatsapp:id/conversations_row_header | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: 'Nepalwin huat99 group' | ID: com.whatsapp:id/conversations_row_contact_name | Class: android.widget.TextView
+  - Text: '5:51 PM' | ID: com.whatsapp:id/conversations_row_date | Class: android.widget.TextView
+  - Text: '' | ID: com.whatsapp:id/bottom_row | Class: android.widget.LinearLayout
+  - Text: '' | ID: null | Class: android.widget.LinearLayout
+  - Text: 'NepalWin Official 3: ' | ID: com.whatsapp:id/msg_from_tv | Class: android.widget.TextView
+  - Text: '' | ID: null | Class: android.widget.FrameLayout
+  - Text: '🎉 Aaja Nepal…' | ID: com.whatsapp:id/single_msg_tv | Class: android.widget.TextView
+
+Clickable elements (36):
+  - Text: 'Search' | ID: com.whatsapp:id/my_search_bar | Bounds: [0,259][1080,391]
+  - Text: 'All filter, , selected' | ID: null | Bounds: [44,457][156,589]
+  - Text: 'Unread filter, 14, unselected' | ID: null | Bounds: [172,457][406,589]
+  - Text: 'Favorites filter, , unselected' | ID: com.whatsapp:id/conversations_filter_debug_view_id_favorite | Bounds: [422,457][656,589]
+  - Text: 'Groups filter, 14, unselected' | ID: null | Bounds: [672,457][909,589]
+  - Text: 'Add new list' | ID: null | Bounds: [925,457][1024,589]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,611][1080,820]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,622][198,809]
+  - Text: 'Nepalwin huat99 group, group profile icon' | ID: com.whatsapp:id/contact_photo | Bounds: [27,644][170,787]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,820][1080,1029]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,831][198,1018]
+  - Text: 'NepalWin Group🇳🇵, group profile icon' | ID: com.whatsapp:id/contact_photo | Bounds: [27,853][170,996]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,1029][1080,1238]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,1040][198,1227]
+  - Text: 'NepalWin🇳🇵Madhukar Basnet picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,1062][170,1205]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,1238][1080,1447]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,1249][198,1436]
+  - Text: 'NepalWin🇳🇵Suman Moktan picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,1271][170,1414]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,1447][1080,1656]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,1458][198,1645]
+  - Text: 'NepalWin🇳🇵Anisha000 picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,1480][170,1623]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,1656][1080,1865]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,1667][198,1854]
+  - Text: 'Nepalwin🇳🇵Zeena001 picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,1689][170,1832]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,1865][1080,2074]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,1876][198,2063]
+  - Text: 'NepalWin 🇳🇵Umesh ram luhar picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,1898][170,2041]
+  - Text: 'No text' | ID: com.whatsapp:id/contact_row_container | Bounds: [0,2074][1080,2179]
+  - Text: 'null' | ID: com.whatsapp:id/contact_selector | Bounds: [0,2085][198,2179]
+  - Text: 'NepalWin🇳🇵Khokan Shil picture' | ID: com.whatsapp:id/contact_photo | Bounds: [27,2107][170,2179]

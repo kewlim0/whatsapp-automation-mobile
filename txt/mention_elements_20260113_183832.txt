@@ -1,0 +1,6 @@
+=== Screen after typing @ (waited 5 seconds) ===
+Timestamp: 20260113_183832
+
+Text elements found: 91
+
+Text: '' | ID: null | Class: android.widget.FrameLayout
