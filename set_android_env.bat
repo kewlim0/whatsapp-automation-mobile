@@ -21,6 +21,6 @@ echo.
 echo Environment variables set for this session!
 echo You can now use:
 echo   - adb devices
-echo   - appium server --port 4723
+echo   - appium server --port 4724
 echo   - python whatsapp.py
 echo.

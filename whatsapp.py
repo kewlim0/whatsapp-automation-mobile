@@ -1291,26 +1291,35 @@ def search_and_find_chat(driver, chat_name):
                 "//*[@text='WhatsApp'] | "
                 "//*[@text='Chats'] | "
                 "//*[@resource-id='com.whatsapp:id/menuitem_search'] | "
-                "//*[@resource-id='com.whatsapp:id/search']"
+                "//*[@resource-id='com.whatsapp:id/search'] | "
+                "//*[@resource-id='com.whatsapp:id/fab']"
             )
 
+            # Wait for at least one main indicator to be present
             main_found = False
+            found_element_name = None
+            wait = WebDriverWait(driver, 5)
             try:
-                elements = driver.find_elements(AppiumBy.XPATH, combined_xpath)
+                elements = wait.until(EC.presence_of_all_elements_located((AppiumBy.XPATH, combined_xpath)))
                 for element in elements:
                     if element.is_displayed():
-                        print(f"[DEBUG] Found main screen element")
+                        # Get element details for logging
+                        try:
+                            found_element_name = element.get_attribute('text') or element.get_attribute('resource-id') or "main element"
+                        except:
+                            found_element_name = "main element"
+                        print(f"[LOAD] Found main element: {found_element_name}")
                         main_found = True
                         break
-            except:
-                pass
+            except TimeoutException:
+                print("[LOAD] Timeout waiting for main WhatsApp elements")
 
             if not main_found:
-                # print("[DEBUG] Not on main screen, pressing back to return...")
+                print("[LOAD] No main WhatsApp elements found, pressing back to return...")
                 driver.press_keycode(4)  # Back button
                 time.sleep(.5)
-        except:
-            pass
+        except Exception as e:
+            print(f"[LOAD] Error checking home screen: {e}")
 
         # # Look for search button/icon - try multiple selectors with timeout
         # search_selectors = [
