@@ -1301,19 +1301,13 @@ def search_and_find_chat(driver, chat_name):
 
         # First, ensure we're on the main WhatsApp screen
         try:
-            # Combined XPath for parallel search - finds any of these elements at once
-            combined_xpath = (
-                "//*[@text='WhatsApp'] | "
-                "//*[@text='Chats'] | "
-                "//*[@resource-id='com.whatsapp:id/menuitem_search'] | "
-                "//*[@resource-id='com.whatsapp:id/search'] | "
-                "//*[@resource-id='com.whatsapp:id/fab']"
-            )
+            # Check for FAB (floating action button) to verify home screen
+            combined_xpath = "//*[@resource-id='com.whatsapp:id/fab']"
 
             # Wait for at least one main indicator to be present
             main_found = False
             found_element_name = None
-            wait = WebDriverWait(driver, 5)
+            wait = WebDriverWait(driver, 10)
             try:
                 elements = wait.until(EC.presence_of_all_elements_located((AppiumBy.XPATH, combined_xpath)))
                 for element in elements:
@@ -1334,8 +1328,7 @@ def search_and_find_chat(driver, chat_name):
                 driver.press_keycode(4)  # Back button
                 time.sleep(.5)
                 open_whatsapp_business(driver)
-                time.sleep(1)
-                input("\n[PAUSE] WhatsApp relaunched. Press ENTER to continue... ")
+                print("[LOAD] WhatsApp relaunched successfully, continuing...")
         except Exception as e:
             print(f"[LOAD] Error checking home screen: {e}")
 
