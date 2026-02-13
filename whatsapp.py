@@ -40,6 +40,21 @@ DEVICE_CONFIGS = {
         "search_button_y": 330
     },
 
+    "Redmi A3": {
+        "photo_select_x": 111,
+        "photo_select_y": 858,
+        "photo_select_fallback_x": 111,
+        "photo_select_fallback_y": 858,
+        "caption_area_x_offset": 0,  # Offset from center, 0 means use center
+        "caption_area_y": 1485,
+        "caption_fallback_x": 360,
+        "caption_fallback_y": 1485,
+        "send_button_x": 655,
+        "send_button_y": 1485,
+        "search_button_x": 355,
+        "search_button_y": 235
+    },
+
     "Techno Pova 7": {
         "photo_select_x": 170,
         "photo_select_y": 1379,
@@ -1315,9 +1330,12 @@ def search_and_find_chat(driver, chat_name):
                 print("[LOAD] Timeout waiting for main WhatsApp elements")
 
             if not main_found:
-                print("[LOAD] No main WhatsApp elements found, pressing back to return...")
+                print("[LOAD] No main WhatsApp elements found, pressing back and relaunching...")
                 driver.press_keycode(4)  # Back button
                 time.sleep(.5)
+                open_whatsapp_business(driver)
+                time.sleep(1)
+                input("\n[PAUSE] WhatsApp relaunched. Press ENTER to continue... ")
         except Exception as e:
             print(f"[LOAD] Error checking home screen: {e}")
 
